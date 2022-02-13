@@ -1,0 +1,17 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Angular State Management</h4>
+      </div>
+
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let course of courseItems$ | async">
+            {{ course.name }}: <b>{{ course.department }}</b>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
